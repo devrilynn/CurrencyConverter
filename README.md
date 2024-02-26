@@ -35,3 +35,6 @@ converted_amount: The converted amount of money in the chosen currency.
     "convert_amount": 120.00,
     "converted_amount": 94.53
   }
+
+  
+[Currency Converter.pdf](https://github.com/devrilynn/CurrencyConverter/files/14410799/Currency.Converter.pdf)
