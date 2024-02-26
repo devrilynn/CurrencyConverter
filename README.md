@@ -36,5 +36,6 @@ converted_amount: The converted amount of money in the chosen currency.
     "converted_amount": 94.53
   }
 
-  
-[Currency Converter.pdf](https://github.com/devrilynn/CurrencyConverter/files/14410799/Currency.Converter.pdf)
+ UML Diagram:
+ 
+[UML - Currency Converter.pdf](https://github.com/devrilynn/CurrencyConverter/files/14410813/UML.-.Currency.Converter.pdf)
