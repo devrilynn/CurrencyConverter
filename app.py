@@ -27,7 +27,6 @@ def convert_currency():
     # Use for debugging
     print(f"Request received: from {from_currency} to {to_currency} amount {convert_amount}") 
 
-    # Validation
     if not from_currency or not to_currency or convert_amount <= 0:
         print("Validation failed")  
         return jsonify({"Error": "Missing or invalid input"})
@@ -45,7 +44,6 @@ def convert_currency():
             "converted_amount": converted_amount
         })
     else:
-        # Error with conversion
         return jsonify({"error": "Currency conversion has failed."})
    
 
@@ -62,7 +60,6 @@ def save_currency():
     # Extracts users preferred currency to save
     preferred_currency = request.json.get('preferred_currency').upper()
     
-    # validate preferred currency
     valid_currencies = get_valid_currencies()
     if preferred_currency not in valid_currencies:
         return jsonify({"error": "Invalid currency code"})
@@ -71,7 +68,6 @@ def save_currency():
     preferences_string = f"{preferred_currency}\n"
     file_path = 'user_preferences.txt'
     
-    # Write & handle errors
     try:
         with open(file_path, 'a') as file:
             file.write(preferences_string)
